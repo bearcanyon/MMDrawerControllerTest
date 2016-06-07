@@ -7,15 +7,38 @@
 //
 
 import UIKit
+import MMDrawerController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var centerContainer: MMDrawerController?
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let centerViewController = mainStoryboard.instantiateViewControllerWithIdentifier("CenterView") as! ViewController
+        
+        let leftViewController = mainStoryboard.instantiateViewControllerWithIdentifier("LeftSideView") as! LeftViewController
+        //     let leftViewController = mainStoryboard.instantiateViewControllerWithIdentifier("RightSideView") as! HogeViewController
+        
+        let leftSideNav = UINavigationController(rootViewController: leftViewController)
+        let centerNav = UINavigationController(rootViewController: centerViewController)
+        //     let rightNav = UINavigationController(rootViewController: rightViewController)
+        
+        centerContainer = MMDrawerController(centerViewController: centerNav, leftDrawerViewController: leftSideNav,rightDrawerViewController:nil)
+        
+        //オープン方法のモード指定
+        centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.All
+        
+        //クローズ方法のモード指定
+        centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.All
+        
+        window!.rootViewController = centerContainer
+        window!.makeKeyAndVisible()
         return true
     }
 

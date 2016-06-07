@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D22FA993D90BF37654DDF4A /* Pods_MMDrawerControllerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A2EFC0086D4463C982EBD2 /* Pods_MMDrawerControllerTest.framework */; };
 		5FE7C09E1D066E4D0091A720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7C09D1D066E4D0091A720 /* AppDelegate.swift */; };
 		5FE7C0A01D066E4D0091A720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7C09F1D066E4D0091A720 /* ViewController.swift */; };
 		5FE7C0A31D066E4D0091A720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE7C0A11D066E4D0091A720 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		5FE7C0A81D066E4D0091A720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE7C0A61D066E4D0091A720 /* LaunchScreen.storyboard */; };
 		5FE7C0B31D066E4D0091A720 /* MMDrawerControllerTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7C0B21D066E4D0091A720 /* MMDrawerControllerTestTests.swift */; };
 		5FE7C0BE1D066E4D0091A720 /* MMDrawerControllerTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7C0BD1D066E4D0091A720 /* MMDrawerControllerTestUITests.swift */; };
+		5FE7C0CC1D06717B0091A720 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7C0CB1D06717B0091A720 /* LeftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		5FE7C0B91D066E4D0091A720 /* MMDrawerControllerTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMDrawerControllerTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE7C0BD1D066E4D0091A720 /* MMDrawerControllerTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMDrawerControllerTestUITests.swift; sourceTree = "<group>"; };
 		5FE7C0BF1D066E4D0091A720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FE7C0CB1D06717B0091A720 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		B0B407A68FFA2796F40FDB57 /* Pods-MMDrawerControllerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDrawerControllerTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMDrawerControllerTest/Pods-MMDrawerControllerTest.release.xcconfig"; sourceTree = "<group>"; };
+		B60D97E9C9C1F32A34156DDE /* Pods-MMDrawerControllerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDrawerControllerTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMDrawerControllerTest/Pods-MMDrawerControllerTest.debug.xcconfig"; sourceTree = "<group>"; };
+		F8A2EFC0086D4463C982EBD2 /* Pods_MMDrawerControllerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMDrawerControllerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D22FA993D90BF37654DDF4A /* Pods_MMDrawerControllerTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26EB5DEA0DE1399E2690FFD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8A2EFC0086D4463C982EBD2 /* Pods_MMDrawerControllerTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DAA2477E45F8852F2CA44E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B60D97E9C9C1F32A34156DDE /* Pods-MMDrawerControllerTest.debug.xcconfig */,
+				B0B407A68FFA2796F40FDB57 /* Pods-MMDrawerControllerTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5FE7C0911D066E4D0091A720 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +105,8 @@
 				5FE7C0B11D066E4D0091A720 /* MMDrawerControllerTestTests */,
 				5FE7C0BC1D066E4D0091A720 /* MMDrawerControllerTestUITests */,
 				5FE7C09B1D066E4D0091A720 /* Products */,
+				2DAA2477E45F8852F2CA44E8 /* Pods */,
+				26EB5DEA0DE1399E2690FFD4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +125,7 @@
 			children = (
 				5FE7C09D1D066E4D0091A720 /* AppDelegate.swift */,
 				5FE7C09F1D066E4D0091A720 /* ViewController.swift */,
+				5FE7C0CB1D06717B0091A720 /* LeftViewController.swift */,
 				5FE7C0A11D066E4D0091A720 /* Main.storyboard */,
 				5FE7C0A41D066E4D0091A720 /* Assets.xcassets */,
 				5FE7C0A61D066E4D0091A720 /* LaunchScreen.storyboard */,
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FE7C0C21D066E4D0091A720 /* Build configuration list for PBXNativeTarget "MMDrawerControllerTest" */;
 			buildPhases = (
+				B87B6867FC3569BC56AA6A85 /* Check Pods Manifest.lock */,
 				5FE7C0961D066E4D0091A720 /* Sources */,
 				5FE7C0971D066E4D0091A720 /* Frameworks */,
 				5FE7C0981D066E4D0091A720 /* Resources */,
+				9EF824DD45633E70A1A76FB8 /* Embed Pods Frameworks */,
+				737F0F2F7B2F8ACCE80EE974 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,11 +281,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		737F0F2F7B2F8ACCE80EE974 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMDrawerControllerTest/Pods-MMDrawerControllerTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EF824DD45633E70A1A76FB8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMDrawerControllerTest/Pods-MMDrawerControllerTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B87B6867FC3569BC56AA6A85 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5FE7C0961D066E4D0091A720 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FE7C0CC1D06717B0091A720 /* LeftViewController.swift in Sources */,
 				5FE7C0A01D066E4D0091A720 /* ViewController.swift in Sources */,
 				5FE7C09E1D066E4D0091A720 /* AppDelegate.swift in Sources */,
 			);
@@ -397,6 +476,7 @@
 		};
 		5FE7C0C31D066E4D0091A720 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B60D97E9C9C1F32A34156DDE /* Pods-MMDrawerControllerTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MMDrawerControllerTest/Info.plist;
@@ -408,6 +488,7 @@
 		};
 		5FE7C0C41D066E4D0091A720 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0B407A68FFA2796F40FDB57 /* Pods-MMDrawerControllerTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MMDrawerControllerTest/Info.plist;
@@ -482,6 +563,7 @@
 				5FE7C0C41D066E4D0091A720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FE7C0C51D066E4D0091A720 /* Build configuration list for PBXNativeTarget "MMDrawerControllerTestTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +572,7 @@
 				5FE7C0C71D066E4D0091A720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FE7C0C81D066E4D0091A720 /* Build configuration list for PBXNativeTarget "MMDrawerControllerTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +581,7 @@
 				5FE7C0CA1D066E4D0091A720 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

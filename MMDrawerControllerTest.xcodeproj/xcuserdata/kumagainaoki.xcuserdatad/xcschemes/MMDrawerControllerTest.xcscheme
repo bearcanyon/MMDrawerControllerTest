@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5FE7C0991D066E4D0091A720"
+               BuildableName = "MMDrawerControllerTest.app"
+               BlueprintName = "MMDrawerControllerTest"
+               ReferencedContainer = "container:MMDrawerControllerTest.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5FE7C0AD1D066E4D0091A720"
+               BuildableName = "MMDrawerControllerTestTests.xctest"
+               BlueprintName = "MMDrawerControllerTestTests"
+               ReferencedContainer = "container:MMDrawerControllerTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5FE7C0B81D066E4D0091A720"
+               BuildableName = "MMDrawerControllerTestUITests.xctest"
+               BlueprintName = "MMDrawerControllerTestUITests"
+               ReferencedContainer = "container:MMDrawerControllerTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5FE7C0991D066E4D0091A720"
+            BuildableName = "MMDrawerControllerTest.app"
+            BlueprintName = "MMDrawerControllerTest"
+            ReferencedContainer = "container:MMDrawerControllerTest.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5FE7C0991D066E4D0091A720"
+            BuildableName = "MMDrawerControllerTest.app"
+            BlueprintName = "MMDrawerControllerTest"
+            ReferencedContainer = "container:MMDrawerControllerTest.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5FE7C0991D066E4D0091A720"
+            BuildableName = "MMDrawerControllerTest.app"
+            BlueprintName = "MMDrawerControllerTest"
+            ReferencedContainer = "container:MMDrawerControllerTest.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
